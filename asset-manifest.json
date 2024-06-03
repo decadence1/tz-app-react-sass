@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tz-app-react-sass/static/css/main.39640563.css",
+    "main.js": "/tz-app-react-sass/static/js/main.d6d3ce5a.js",
+    "index.html": "/tz-app-react-sass/index.html",
+    "main.39640563.css.map": "/tz-app-react-sass/static/css/main.39640563.css.map",
+    "main.d6d3ce5a.js.map": "/tz-app-react-sass/static/js/main.d6d3ce5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39640563.css",
+    "static/js/main.d6d3ce5a.js"
+  ]
+}
