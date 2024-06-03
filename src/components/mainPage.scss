@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-page {
+  padding-top: 40px;
+  font-family: "Roboto", sans-serif;
+  @media (max-width: 471px) {
+    padding-top: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-left: 342.5px;
+    font-weight: 700;
+    color: rgba(34, 40, 74, 1);
+    animation: fadeInUp 1s ease forwards;
+
+    @media (max-width: 471px) {
+      margin-left: 0px;
+      font-size: 24px;
+      line-height: 28px;
+      margin-left: 12px;
+      padding-bottom: 16px;
+      padding-top: 0;
+    }
+  }
+
+  .content_container {
+    position: relative;
+  }
+
+  .border_main {
+    border: 4px solid rgba(107, 125, 222, 0.24);
+    border-radius: 24px;
+    width: fit-content;
+    margin-left: 320.5px;
+    animation: fadeInUp 1.5s ease forwards;
+
+    @media (max-width: 471px) {
+      margin-left: 0px;
+    }
+  }
+
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px;
+    width: fit-content;
+    border-radius: 24px;
+    box-shadow: 0px 24px 48px 0px rgba(23, 43, 151, 0.72);
+    background: linear-gradient(
+      180deg,
+      rgba(107, 125, 222, 0.12) 0%,
+      #2921a5 100%
+    );
+    @media (max-width: 471px) {
+      gap: 8px;
+    }
+
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .arrows {
+    @media (max-width: 471px) {
+      position: absolute;
+      transform: rotate(-90deg) scaleX(-1); /* Поворачиваем на 90 градусов влево и отражаем по горизонтали */
+      margin-left: 250px;
+      margin-top: 330px;
+    }
+
+    @media (max-width: 361px) {
+      margin-left: 300px;
+    }
+
+    .overlay-image {
+      position: absolute;
+      transform: translateY(
+        -50%
+      ); /* Корректируем положение, чтобы изображения были точно по центру */
+      left: 0; /* Размещаем первое изображение слева */
+      margin-left: 380px;
+      margin-top: 100px;
+    }
+
+    .overlay-image + .overlay-image {
+      left: 430px; /* Устанавливаем отступ между изображениями */
+    }
+
+    @media (max-width: 471px) {
+      .overlay-image {
+        top: 50%; /* Положение по вертикали */
+        transform-origin: center center; /* Устанавливаем точку вращения в центр */
+        margin-top: 60px; /* Корректируем положение, чтобы изображение было по центру */
+        margin-left: -25px; /* Корректируем положение, чтобы изображение было по центру */
+      }
+      .overlay-image + .overlay-image {
+        left: 365px; /* Устанавливаем отступ между изображениями */
+      }
+    }
+
+    @media (max-width: 361px) {
+      .overlay-image + .overlay-image {
+        left: 400px; /* Устанавливаем отступ между изображениями */
+      }
+    }
+  }
+
+  .section {
+    width: 419px;
+    height: 352px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-width 0.2s;
+
+    @media (max-width: 360px) {
+      width: 328px;
+      height: 352px;
+    }
+
+    &.blue {
+      background: linear-gradient(180deg, #6377e1 0%, #2920a5 100%);
+      border: 2px solid;
+      border-color: #8d9eff;
+
+      &:hover {
+        border-width: 6px; /* Увеличение толщины бордера при наведении */
+      }
+      img {
+        margin-top: 35px; // Добавляем отступ сверху для изображения
+
+        @media (max-width: 360px) {
+          margin: 0px;
+        }
+      }
+    }
+
+    &.green {
+      background: linear-gradient(180deg, #e163e1 0%, #741595 100%);
+      border: 2px solid;
+      border-color: #ffabfb;
+      margin: 0 8px;
+
+      &:hover {
+        border-width: 6px; /* Увеличение толщины бордера при наведении */
+      }
+      img {
+        margin-top: -17px; // Добавляем отступ сверху для изображения
+      }
+
+      @media (max-width: 360px) {
+        margin: 0px;
+      }
+    }
+
+    &.purple {
+      background: linear-gradient(180deg, #55ce00 0%, #014d1d 100%);
+      border: 2px solid;
+      border-color: #56c04c;
+      &:hover {
+        border-width: 6px; /* Увеличение толщины бордера при наведении */
+      }
+      img {
+        margin-top: 27px; // Добавляем отступ сверху для изображения
+      }
+    }
+
+    @media (max-width: 360px) {
+      width: 100%;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .section-number {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.32); // Устанавливаем тень вместо рамки
+      }
+
+      .number-1 {
+        background: linear-gradient(180deg, #2920a5 0%, #6377e1 100%);
+      }
+
+      .number-2 {
+        background: linear-gradient(180deg, #741595 0%, #e163e1 100%);
+      }
+
+      .number-3 {
+        background: linear-gradient(180deg, #014d1d 0%, #55ce00 100%);
+      }
+
+      .section-text {
+        flex-grow: 1;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .btn {
+    @media (max-width: 361px) {
+      padding-top: 20px;
+    }
+  }
+
+  .partner-button {
+    background: linear-gradient(180deg, #5dc416 0%, #367b05 100%);
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid #8bf049;
+    border-radius: 16px;
+    padding: 10px 20px;
+    margin-top: 64px;
+    margin-left: 1116.5px;
+    width: 220px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px 0px rgba(61, 147, 0, 0.48);
+    box-shadow: 0px 0px 0px 4px rgba(91, 192, 20, 0.24);
+    animation: fadeInUp 1.5s ease forwards;
+
+    @media (max-width: 471px) {
+      margin-bottom: 32px;
+      margin-left: 130px;
+      margin-right: auto;
+    }
+
+    @media (max-width: 361px) {
+      margin-bottom: 32px;
+      margin-left: 130px;
+      margin-right: auto;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      margin-left: 15px;
+    }
+
+    &:hover {
+      border-width: 4px; /* Увеличение толщины бордера при наведении */
+      box-shadow: 0px 0px 0px 6px rgba(91, 192, 20, 0.24); /* Увеличиваем распространение тени */
+    }
+
+    &:active {
+      border-width: 2px; // Устанавливаем толщину бордера в 2px при активации кнопки
+      box-shadow: 0px 0px 0px 4px rgba(91, 192, 20, 0.24);
+    }
+  }
+}
