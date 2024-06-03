@@ -74,7 +74,7 @@
   .arrows {
     @media (max-width: 471px) {
       position: absolute;
-      transform: rotate(-90deg) scaleX(-1); /* Поворачиваем на 90 градусов влево и отражаем по горизонтали */
+      transform: rotate(-90deg) scaleX(-1);
       margin-left: 250px;
       margin-top: 330px;
     }
@@ -85,33 +85,31 @@
 
     .overlay-image {
       position: absolute;
-      transform: translateY(
-        -50%
-      ); /* Корректируем положение, чтобы изображения были точно по центру */
-      left: 0; /* Размещаем первое изображение слева */
+      transform: translateY(-50%);
+      left: 0;
       margin-left: 380px;
       margin-top: 100px;
     }
 
     .overlay-image + .overlay-image {
-      left: 430px; /* Устанавливаем отступ между изображениями */
+      left: 430px;
     }
 
     @media (max-width: 471px) {
       .overlay-image {
-        top: 50%; /* Положение по вертикали */
-        transform-origin: center center; /* Устанавливаем точку вращения в центр */
-        margin-top: 60px; /* Корректируем положение, чтобы изображение было по центру */
-        margin-left: -25px; /* Корректируем положение, чтобы изображение было по центру */
+        top: 50%;
+        transform-origin: center center;
+        margin-top: 60px;
+        margin-left: -25px;
       }
       .overlay-image + .overlay-image {
-        left: 365px; /* Устанавливаем отступ между изображениями */
+        left: 365px;
       }
     }
 
     @media (max-width: 361px) {
       .overlay-image + .overlay-image {
-        left: 400px; /* Устанавливаем отступ между изображениями */
+        left: 400px;
       }
     }
   }
@@ -138,10 +136,10 @@
       border-color: #8d9eff;
 
       &:hover {
-        border-width: 6px; /* Увеличение толщины бордера при наведении */
+        border-width: 6px;
       }
       img {
-        margin-top: 35px; // Добавляем отступ сверху для изображения
+        margin-top: 35px;
 
         @media (max-width: 360px) {
           margin: 0px;
@@ -156,10 +154,10 @@
       margin: 0 8px;
 
       &:hover {
-        border-width: 6px; /* Увеличение толщины бордера при наведении */
+        border-width: 6px;
       }
       img {
-        margin-top: -17px; // Добавляем отступ сверху для изображения
+        margin-top: -17px;
       }
 
       @media (max-width: 360px) {
@@ -172,10 +170,10 @@
       border: 2px solid;
       border-color: #56c04c;
       &:hover {
-        border-width: 6px; /* Увеличение толщины бордера при наведении */
+        border-width: 6px;
       }
       img {
-        margin-top: 27px; // Добавляем отступ сверху для изображения
+        margin-top: 27px;
       }
     }
 
@@ -199,7 +197,7 @@
         justify-content: center;
         align-items: center;
         margin-right: 10px;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.32); // Устанавливаем тень вместо рамки
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.32);
       }
 
       .number-1 {
@@ -271,12 +269,12 @@
     }
 
     &:hover {
-      border-width: 4px; /* Увеличение толщины бордера при наведении */
-      box-shadow: 0px 0px 0px 6px rgba(91, 192, 20, 0.24); /* Увеличиваем распространение тени */
+      border-width: 4px;
+      box-shadow: 0px 0px 0px 6px rgba(91, 192, 20, 0.24);
     }
 
     &:active {
-      border-width: 2px; // Устанавливаем толщину бордера в 2px при активации кнопки
+      border-width: 2px;
       box-shadow: 0px 0px 0px 4px rgba(91, 192, 20, 0.24);
     }
   }
